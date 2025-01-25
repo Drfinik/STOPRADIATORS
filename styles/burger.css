@@ -1,0 +1,53 @@
+.burger-button {    
+    display: none;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    /* Прозрачный фон */
+    cursor: pointer;
+    border: none;
+    padding: 0;
+}
+
+/* Можно добавить стили для отображения трех полос (гамбургера) */
+.burger-button::before,
+.burger-button::after,
+.burger-button span {    
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    /* немного тоньше, чем в предыдущем примере, по желанию */
+    background-color: #BB8E34;
+    /* Цвет полосок  */
+    margin: 3px 0;
+    /* Отступы между полосками */
+}
+
+.close-button span {
+    background-color: transparent;
+    /* Прячем среднюю полоску */
+}
+
+.close-button::before {
+    transform: translateY(6px) rotate(45deg);
+    /* Поворот верхней полоски */
+}
+
+.close-button::after {
+    transform: translateY(-6px) rotate(-45deg);
+    /* Поворот верхней полоски */
+}
+
+/* При необходимости добавьте эффект при наведении (например, изменение цвета) */
+.burger-button:hover::before,
+.burger-button:hover::after,
+.burger-button:hover span {
+    background-color: #976C25;
+    /* Изменение цвета полосок на при наведении */
+}
+
+.close-button:hover span {
+    background-color: transparent;
+    /* Прячем среднюю полоску при наведении */
+}

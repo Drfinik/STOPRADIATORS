@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOPRADIATORS</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="styles/burger.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="top">
+                <nav class="nav-top">
+                    <ul>
+                        <li> <a href="#" class="nav-item nav-item-active">Расчет</a></li>
+                        <li><a href="#" class="nav-item">Этапы монтажа</a></li>
+                        <li><a href="#" class="nav-item">Примеры работ</a></li>
+                        <li><a href="#" class="nav-item">Вопрос-ответ</a></li>
+                        <li><a href="#" class="nav-item">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="address">
+                    <img src="images/icon/location.svg" alt="location-pin" class="address-icon">
+                    <a class="address-text">г. Санкт-Петербург, Выборгское шоссе, д. 212, строение 8</a>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="logo">
+                    <button class="burger-button"><span></span></button>
+                    <img src="images/icon/Logotype.svg" alt="Logotype">
+                    <div class="logo-text">
+                        <div class="logo-text-column">
+                            <h1>STOPRADIATORS</h1>
+                            <h3>ВСЕ ИНЖЕНЕРНЫЕ СЕТИ</h3>
+                        </div>
+                        <img src="images/icon/Line.svg" alt="Line">
+                        <div class="logo-text-column">
+                            <h2>МОНТАЖ ИНЖЕНЕРНЫХ СИСТЕМ</h2>
+                            <p>И ПРОДАЖА ОБОРУДОВАНИЯ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact">
+                    <div class="phone">
+                        <img src="images/icon/phone.svg" alt="Phone">
+                        <div class="phone-number">
+                            <a href="tel:88122452346">8 (812) 245-23-46</a>
+                            <a href="tel:88124383258">8 (812) 438-32-58</a>
+                        </div>
+                    </div>
+                    <button class="button-phone">ЗАКАЗАТЬ<br>ЗВОНОК</button>
+                    <div class="email">
+                        <img src="images/icon/email.svg" alt="Email">
+                        <div class="email-text">
+                            <p href="tel:88122452346">Пн-Пт 9:00-19:00</p>
+                            <a href="mailto:info@stopradiators.ru">info@stopradiators.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="#" class="nav-item">Расчет</a></li>
+                    <li><a href="#" class="nav-item">Этапы монтажа</a></li>
+                    <li><a href="#" class="nav-item">Примеры работ</a></li>
+                    <li><a href="#" class="nav-item">Вопрос-ответ</a></li>
+                    <li><a href="#" class="nav-item">Контакты</a></li>
+                </ul>
+                <div class="email mobile-email">
+                    <img src="images/icon/email.svg" alt="Email">
+                    <div class="email-text mobile-email-text">
+                        <p href="tel:88122452346">Пн-Пт 9:00-19:00</p>
+                        <a href="mailto:info@stopradiators.ru">info@stopradiators.ru</a>
+                    </div>
+                </div>
+                <div class="phone mobile-phone">
+                    <div class="mobile-phone-content">
+                        <img src="images/icon/phone.svg" alt="Phone">
+                        <div class="phone-number mobile-phone-number">
+                            <a href="tel:88122452346">8 (812) 245-23-46</a>
+                            <a href="tel:88124383258">8 (812) 438-32-58</a>
+                        </div>
+                    </div>
+                    <button class="button-phone mobile-button-phone">ЗАКАЗАТЬ<br>ЗВОНОК</button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <script>
+        const mobileMenuButton = document.querySelector('.burger-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenuButton.classList.toggle('close-button');
+            mobileMenu.classList.toggle('mobile-menu-active');
+        });
+
+
+    </script>
+</body>
+
+</html>

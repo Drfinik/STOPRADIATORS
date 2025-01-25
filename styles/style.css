@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "PT Sans Narrow";
+    background-color: #FAFAFA;
+}
+
+a {
+    color: #FAFAFA;
+    text-decoration: none;
+}
+
+
+img {
+    display: block;
+}
+
+.header {
+    position: relative;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+
+}
+
+.header .container {
+    max-height: 181px;
+    background-image: url(../images/background-header.png);
+    background-repeat: no-repeat;
+
+    background-position: center center;
+
+    background-attachment: fixed;
+
+    -webkit-background-size: cover;
+
+    -moz-background-size: cover;
+
+    -o-background-size: cover;
+
+    background-size: cover;
+    padding: 41px;
+}
+
+.header .top {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px;
+
+}
+
+.nav-top ul {
+    display: flex;
+    gap: 60px;
+}
+
+.nav-top ul li {
+    list-style: none;
+}
+
+.nav-top ul li:hover a {
+    color: #BB8E34;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.address-text {
+    color: #FAFAFA;
+    text-align: right;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.104px
+}
+
+.address a:hover {
+    color: #BB8E34;
+}
+
+.header .bottom {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo img {
+    width: 70.768px;
+    height: 52.905px;
+}
+
+.logo-text {
+    color: #F3F3F3;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23.326px;
+}
+
+.logo-text img {
+    width: 1.166px;
+}
+
+.logo-text-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-text-column h1 {
+    font-size: 23.326px;
+    letter-spacing: 0.14px;
+}
+
+.logo-text-column h3 {
+    font-size: 15.162px;
+    letter-spacing: 0.121px;
+    text-transform: uppercase;
+}
+
+.logo-text-column h2 {
+    font-size: 15.162px;
+    letter-spacing: 0.121px;
+    text-transform: uppercase;
+}
+
+.logo-text-column p {
+    color: #C9CCCF;
+    font-size: 15.162px;
+    letter-spacing: 0.121px;
+    text-transform: uppercase;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.phone-number {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+}
+
+.phone-number a {
+    color: #FAFAFA;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.104px;
+    text-transform: uppercase;
+}
+
+
+.phone-number a:hover {
+    color: #BB8E34;
+}
+
+.button-phone {
+    padding: 2px 32px;
+    border-radius: 6px;
+    border: 1px solid #BB8E34;
+    background: #BB8E34;
+    color: #FAFAFA;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.096px;
+    text-transform: uppercase;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.email-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+}
+
+.email-text a,
+p {
+    color: #FAFAFA;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.104px;
+    text-transform: uppercase;
+}
+
+.email-text a:hover {
+    color: #BB8E34;
+}
+
+.mobile-menu {
+    padding: 20px 16px;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    display: none;
+    width: 100%;
+    background: linear-gradient(180deg, #425160 0%, rgba(37, 51, 66, 0.00) 100%), #1F2B38;
+}
+
+.mobile-menu-active {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu ul {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.mobile-menu ul li {
+    list-style: none;
+    width: 100%;
+    padding: 12px;
+    background: #1F2B38;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+
+.mobile-menu ul li a {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.104px;
+    text-transform: uppercase;
+}
+
+.mobile-menu ul li:hover a {
+    color: #BB8E34;
+}
+
+.mobile-menu .mobile-email {
+    margin-bottom: 20px;
+}
+
+.mobile-menu .mobile-email,
+.mobile-email-text p,
+.mobile-menu .mobile-button-phone,
+.mobile-menu .mobile-phone,
+.mobile-menu .mobile-phone-number {
+    display: flex;
+}
+
+.mobile-phone {
+    justify-content: space-between;
+}
+
+.mobile-phone .mobile-phone-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
